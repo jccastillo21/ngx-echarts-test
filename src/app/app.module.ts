@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { MapComponent } from './components/map/map.component';
 import { ChartComponent } from './components/chart/chart.component';
+import { CustomMapComponent } from './components/custom-map/custom-map.component';
 
 @NgModule({
   imports: [
@@ -19,7 +20,12 @@ import { ChartComponent } from './components/chart/chart.component';
       echarts: () => import('echarts'),
     }),
   ],
-  declarations: [AppComponent, MapComponent, ChartComponent],
+  declarations: [
+    AppComponent,
+    MapComponent,
+    ChartComponent,
+    CustomMapComponent,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
