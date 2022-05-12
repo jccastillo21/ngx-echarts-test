@@ -13,7 +13,7 @@ export class CustomMapComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    fetch('./assets/europe.json')
+    fetch('./assets/nuts3.json')
       .then((res) => res.json())
       .then((jsonData) => {
         this.map = jsonData;
