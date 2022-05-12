@@ -13,7 +13,7 @@ export class CustomMapComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    fetch('./assets/custom-geo.json')
+    fetch('./assets/europe.json')
       .then((res) => res.json())
       .then((jsonData) => {
         this.map = jsonData;
@@ -83,7 +83,7 @@ export class CustomMapComponent implements OnInit {
           data: [
             { name: 'France', value: 4822023 },
             { name: 'Spain', value: 1855525 },
-            { name: 'Portugal', value: 2758931 }
+            { name: 'Portugal', value: 2758931 },
           ],
         },
       ],
